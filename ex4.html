@@ -25,7 +25,12 @@
     <a href="index.html">Back to the home page</a>
 
     <script>
-        // Write your function here
+        var button = document.getElementById("changeColorBtn")
+        var box = document.getElementById("box")
+        button.setAttribute("onclick", "changeColor()")
+        function changeColor(){
+            box.setAttribute("style", "background-color: red;")
+        }
     </script>
 </body>
 </html>
